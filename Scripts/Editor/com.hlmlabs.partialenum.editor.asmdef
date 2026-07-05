@@ -1,0 +1,9 @@
+{
+  "name": "com.hlmlabs.partialenum.editor",
+  "references": [
+    "com.hlmlabs.partialenum.runtime"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ]
+}

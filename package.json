@@ -1,0 +1,11 @@
+{
+  "name": "com.hlmlabs.partialenum",
+  "version": "1.0.0",
+  "displayName": "HLM Partial Enum",
+  "description": "A static-driven solution to simulate partial behaviour on enum-like serialized structures in Unity.",
+  "unity": "2022.3",
+  "author": 
+  {
+    "name": "HLM Labs"
+  }
+}
