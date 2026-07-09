@@ -1,0 +1,6 @@
+﻿{
+  "name": "HLMLabs.PartialEnum.Samples.Runtime",
+  "references": [
+    "HLMLabs.PartialEnum.Runtime"
+  ]
+}

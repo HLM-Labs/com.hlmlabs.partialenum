@@ -1,0 +1,9 @@
+{
+  "name": "HLMLabs.PartialEnum.Editor",
+  "references": [
+    "HLMLabs.PartialEnum.Runtime"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ]
+}

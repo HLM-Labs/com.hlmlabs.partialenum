@@ -1,6 +1,0 @@
-﻿{
-  "name": "com.hlmlabs.partialenum.samples.runtime",
-  "references": [
-    "com.hlmlabs.partialenum.runtime"
-  ]
-}
