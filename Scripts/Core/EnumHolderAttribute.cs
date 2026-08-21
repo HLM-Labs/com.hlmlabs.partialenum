@@ -2,10 +2,11 @@
 
 namespace HLMLabs.PartialEnum.Runtime
 {
-    [AttributeUsage(AttributeTargets.Struct)]
-    public class EnumHolderAttribute : Attribute
+    [AttributeUsage(AttributeTargets.Class | AttributeTargets.Struct, Inherited = false)]
+    public sealed class EnumHolderAttribute : Attribute
     {
-        public Type HolderType { get; }
-        public EnumHolderAttribute(Type holderType) => HolderType = holderType;
+        public Type TagType { get; }
+
+        public EnumHolderAttribute(Type tagType) => TagType = tagType;
     }
 }

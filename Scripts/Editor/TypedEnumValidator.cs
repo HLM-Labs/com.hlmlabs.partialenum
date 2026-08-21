@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Linq;
-using System.Reflection;
 using HLMLabs.PartialEnum.Runtime;
 using UnityEditor;
 using UnityEngine;
@@ -13,7 +12,7 @@ namespace HLMLabs.PartialEnum.Editor
     {
         static TypedEnumValidator()
         {
-            foreach (var tagType in TypeCache.GetTypesWithAttribute<EnumHolderAttribute>())
+            foreach (var tagType in TypedEnumOptions.GetKnownTagTypes())
             {
                 try
                 {
@@ -28,18 +27,14 @@ namespace HLMLabs.PartialEnum.Editor
 
         private static void Validate(Type tagType)
         {
-            var holderAttr = tagType.GetCustomAttribute<EnumHolderAttribute>();
-            if (holderAttr?.HolderType == null)
-            {
-                Debug.LogError($"{tagType.Name}: {nameof(EnumHolderAttribute)} must specify a non-null holder type.");
-                return;
-            }
-
             if (!TypedEnumOptions.TryGet(tagType, out var names, out var values))
             {
                 Debug.LogError($"{tagType.Name}: could not resolve typed enum options.");
                 return;
             }
+
+            var holders = TypedEnumOptions.GetHolders(tagType);
+            var holderNames = string.Join(", ", holders.Select(holder => holder.Name));
 
             var duplicates = names
                 .Zip(values, (name, value) => (name, value))
@@ -49,7 +44,7 @@ namespace HLMLabs.PartialEnum.Editor
             foreach (var group in duplicates)
             {
                 Debug.LogError(
-                    $"{holderAttr.HolderType.Name}: duplicate value {group.Key} on fields " +
+                    $"{tagType.Name} [{holderNames}]: duplicate value {group.Key} on fields " +
                     $"[{string.Join(", ", group.Select(entry => entry.name))}].");
             }
         }
