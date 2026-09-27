@@ -1,4 +1,5 @@
-﻿using HLMLabs.PartialEnum.Runtime;
+﻿using System;
+using HLMLabs.PartialEnum.Runtime;
 using UnityEngine;
 
 namespace HLMLabs.PartialEnum.Samples
@@ -9,10 +10,17 @@ namespace HLMLabs.PartialEnum.Samples
 
         private void Start()
         {
-            Debug.Log("Currently selected Custom Type: " + _customType);
-
+            // example of operator usage with TypedEnum
             if (_customType == EnumCustomType.ValueA)
                 Debug.Log("Value A selected");
+        }
+
+        private void OnValidate()
+        {
+            if (Application.isPlaying)
+            {
+                Debug.Log("Currently selected Custom Type: " + _customType);
+            }
         }
     }
 }
