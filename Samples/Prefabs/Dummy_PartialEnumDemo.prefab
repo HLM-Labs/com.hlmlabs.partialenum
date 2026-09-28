@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8201112857167058145}
-  - component: {fileID: 3630639649079750911}
+  - component: {fileID: 6748087751619801131}
   m_Layer: 0
   m_Name: Dummy_PartialEnumDemo
   m_TagString: Untagged
@@ -32,7 +32,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3630639649079750911
+--- !u!114 &6748087751619801131
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -41,8 +41,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 5172506572624953114}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4ccaee0b05443b89b7b8cbb696697ad, type: 3}
+  m_Script: {fileID: 11500000, guid: f34dc10602c3de042afdf66c6738e460, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: HLMLabs.PartialEnum.Samples.Runtime::HLMLabs.PartialEnum.Samples.EnumCustomTypeDummy
   _customType:
     value: 1000
