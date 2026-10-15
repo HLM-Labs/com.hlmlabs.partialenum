@@ -10,9 +10,14 @@ namespace HLMLabs.PartialEnum.Samples
 
         private void Start()
         {
-            // example of operator usage with TypedEnum
-            if (_customType == EnumCustomType.ValueA)
-                Debug.Log("Value A selected");
+            //use operators != or ==
+            bool equalsA = _customType == EnumCustomType.ValueA;
+            // get string value
+            string getStringName = _customType.ToString();
+            //access int value 
+            int getIntValue = _customType.Value;
+            
+            Debug.Log($"Custom type == ValueA : {equalsA}, Custom type value :  {getIntValue},  Custom type name : {getStringName}");
         }
 
         private void OnValidate()
