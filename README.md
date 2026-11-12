@@ -1,11 +1,18 @@
 # 🔧 Installation
+
+## Option 1. Unity Asset Store
+- Find [Partial Enum on Asset Store](https://u3d.as/4cdb) and add it to your assets.
+- Inside your Unity project go to Window -> Package Manager
+- Select the asset from "My Assets" and install it
+
+## Option 2. Git
 - Inside your Unity project go to Window -> Package Manager
 - At the bottom left corner choose "+"
 - Install package from git URL
-- Paste `https://github.com/Hllib/com.hlmlabs.partialenum.git`  
+- Paste `https://github.com/HLM-Labs/com.hlmlabs.partialenum.git`
 - Click "Install"
-
 ---
+
 # Partial Enum
 
 Type-safe, serializable enum-like values that can be defined across multiple files **and across multiple assemblies**.
