@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 245cecceb54ca004398e2113731d8d67
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 411186
+  packageName: Partial Enum
+  packageVersion: 1.1.0
+  assetPath: Assets/HLM Labs/Partial Enum/Samples/Scene_PartialEnumDemo.unity
+  uploadId: 1045454

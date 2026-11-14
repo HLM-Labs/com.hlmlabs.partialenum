@@ -1,3 +1,10 @@
 ﻿fileFormatVersion: 2
 guid: 51d7786d38b8402cb1c765d472d19f7d
 timeCreated: 1782884737
+AssetOrigin:
+  serializedVersion: 1
+  productId: 411186
+  packageName: Partial Enum
+  packageVersion: 1.1.0
+  assetPath: Assets/HLM Labs/Partial Enum/Scripts/Core/EnumHolderAttribute.cs
+  uploadId: 1045454

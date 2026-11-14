@@ -5,3 +5,10 @@ AssemblyDefinitionImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 411186
+  packageName: Partial Enum
+  packageVersion: 1.1.0
+  assetPath: Assets/HLM Labs/Partial Enum/Scripts/Core/HLMLabs.PartialEnum.Runtime.asmdef
+  uploadId: 1045454

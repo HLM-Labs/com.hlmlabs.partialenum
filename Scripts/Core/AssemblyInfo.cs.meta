@@ -1,2 +1,9 @@
 fileFormatVersion: 2
 guid: 9a0301de123cf1d49bb09c6276b075ea
+AssetOrigin:
+  serializedVersion: 1
+  productId: 411186
+  packageName: Partial Enum
+  packageVersion: 1.1.0
+  assetPath: Assets/HLM Labs/Partial Enum/Scripts/Core/AssemblyInfo.cs
+  uploadId: 1045454

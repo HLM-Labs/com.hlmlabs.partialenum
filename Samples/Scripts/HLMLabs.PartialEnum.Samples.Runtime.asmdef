@@ -1,6 +1,7 @@
 ﻿{
   "name": "HLMLabs.PartialEnum.Samples.Runtime",
   "references": [
-    "HLMLabs.PartialEnum.Runtime"
+    "HLMLabs.PartialEnum.Runtime",
+    "Unity.TextMeshPro"
   ]
 }

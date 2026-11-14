@@ -1,5 +1,5 @@
-﻿using System;
-using HLMLabs.PartialEnum.Runtime;
+﻿using HLMLabs.PartialEnum.Runtime;
+using TMPro;
 using UnityEngine;
 
 namespace HLMLabs.PartialEnum.Samples
@@ -7,6 +7,7 @@ namespace HLMLabs.PartialEnum.Samples
     public class EnumCustomTypeDummy : MonoBehaviour
     {
         [SerializeField] private TypedEnum<EnumCustomType> _customType;
+        [SerializeField] private TMP_Text _sampleText;
 
         private void Start()
         {
@@ -17,14 +18,18 @@ namespace HLMLabs.PartialEnum.Samples
             //access int value 
             int getIntValue = _customType.Value;
             
-            Debug.Log($"Custom type == ValueA : {equalsA}, Custom type value :  {getIntValue},  Custom type name : {getStringName}");
+            string sampleText = $"Custom type == ValueA : {equalsA}, Custom type value :  {getIntValue},  Custom type name : {getStringName}";
+            Debug.Log(sampleText);
+            _sampleText.text = sampleText;
         }
 
         private void OnValidate()
         {
             if (Application.isPlaying)
             {
-                Debug.Log("Currently selected Custom Type: " + _customType);
+                string str  = "Currently selected Custom Type: " + _customType;
+                Debug.Log(str);
+                _sampleText.text = str;
             }
         }
     }
